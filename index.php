@@ -14,22 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="navbar-fixed">
-	<nav>
-		<div class="nav-wrapper">
-		  <a href="index.php" class="brand-logo">Tira Times</a>
-		  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-		  <ul id="nav-mobile" class="right hide-on-med-and-down">
-		    <li class="waves-effect active"><a href="index.php">Início</a></li>
-		    <li class="waves-effect"><a href="tirar.php">Tirar Times</a></li>
-		  </ul>
-		</div>
-	</nav>
-</div>
-<ul class="sidenav" id="mobile-demo">
-    <li class="active"><a href="index.php" class='ativado'>Início</a></li>
-    <li><a href="tirar.php">Tirar Times</a></li>
-</ul>
+<?php include "includes/components/menu.php" ?>
 <!-- Fim do Menu  -->
 <!-- Centro -->
 <div id="fundo">	
@@ -37,7 +22,7 @@
 		<div class="col m12" id="centro">
 			<h2 class="header center white-text"> O <b>melhor site</b> para tirar times</h2>
 			<h5 class="center white-text"> Sorteie os times para sua pelada com o melhor site! Com opções de escolha de goleiros e avaliação dos jogadores. </h5> 
-			<a class="waves-effect waves-light btn-large green" href="tirar.php" id="botao"> Tirar Time </a>
+			<a class="waves-effect waves-light btn-large green" href="addplayers.php" id="botao"> Tirar Time </a>
 		</div>		
 	</div>
 </div>
@@ -45,3 +30,4 @@
 </html>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.min.js" ></script>
+<script type="text/javascript"> <?php include_once "includes/components/sidenav.js"; ?></script>
