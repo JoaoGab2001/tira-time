@@ -39,7 +39,7 @@
 				</form>		
 			</div>	
 		</div>		
-		<div class="col m12" id="backblack2">
+		<div class="col s12" id="backblack2">
 		<?php
 		if(isset($_POST["jogador"][0])){
 			$nomeJogador = $_POST["jogador"];
@@ -72,7 +72,7 @@
 			}
 		}
 		?>
-			<button type="submit" onclick="window.location.href = 'setgoalkeepers.php'" class="waves-effect col m12 waves-light btn-large green <?php if($_SESSION["numTeams"]<2){echo " disabled ";} ?>" id="botao"> Próxima Etapa <i class="material-icons right"> arrow_forward_ios </i> </button>
+			<button type="submit" onclick="window.location.href = 'setgoalkeepers.php'" class="waves-effect col s12 waves-light btn-large green <?php if($_SESSION["numTeams"]<2){echo "disabled ";} ?>" id="botao"> Próxima Etapa <i class="material-icons right"> arrow_forward_ios </i> </button>
 		</div>	
 	</div>
 </div>
@@ -80,4 +80,4 @@
 </html>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.min.js" ></script>
-<script type="text/javascript"> <?php include_once "includes/components/sidenav.js"; ?></script>
+<?php include_once "includes/components/sidenav.html"; ?>
